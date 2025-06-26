@@ -30,6 +30,14 @@ export default function Profile() {
         <textarea name="message" placeholder="Your message" rows="4" className="w-full p-2 border rounded" />
         <button type="submit" className="w-full bg-blue-600 text-white py-2 rounded">Send Booking Request</button>
       </form>
+
+      {/* About Me Section */}
+      <div className="mt-6 bg-gray-100 p-4 rounded">
+        <h3 className="text-xl font-semibold mb-2">About Me</h3>
+        <p className="text-gray-700">
+          {profile.about || "This photographer hasn’t added an about me yet, but they’re passionate about capturing Connecticut through their lens!"}
+        </p>
+      </div>
     </div>
   );
 }
